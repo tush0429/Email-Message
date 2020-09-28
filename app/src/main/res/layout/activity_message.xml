@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Message">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="Enter Phone No"
+            android:textSize="16dp"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TextView>
+
+
+        <EditText
+            android:layout_marginTop="8dp"
+            android:id="@+id/t1"
+            android:padding="16dp"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:text="Enter Message"
+            android:textSize="16dp"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TextView>
+
+
+
+        <EditText
+            android:layout_marginTop="8dp"
+            android:id="@+id/t2"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+        </EditText>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:onClick="Msgkar"
+                android:layout_weight="1"
+                android:text="Send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </Button>
+            <Button
+
+                android:onClick="ClearKar"
+                android:layout_weight="1"
+                android:text="Clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
